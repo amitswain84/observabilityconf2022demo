@@ -321,7 +321,12 @@ overflow:visible;
 	float:none;
 	margin:0;
 	padding:0;
-	}	
+	}
+
+	img.attend-icon {
+		max-width: 53px;
+		margin-right: 10px;
+	}
 	
 	.de-navbar-left header #mainmenu > li{
 	display:block !important;
@@ -8209,6 +8214,7 @@ display:table;
 	img.attend-icon {
 		/* width: 50% !important; */
 		/* height: auto !important; */
+		max-width: 75px;
 		padding: 0px 15px;
 	}
 	.col-lg-4.wow.fadeIn.whyJoin_content.animated {
