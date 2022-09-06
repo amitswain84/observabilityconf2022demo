@@ -1,0 +1,38 @@
+.header-center {
+    width: 100%;
+    text-align: center;
+}
+
+.objectFit-cover {
+    object-fit: cover !important;
+}
+
+.speakers-extraMargin-1 {
+    margin: auto;
+}
+
+.speakers-extraMargin-2 {
+    margin: auto;
+}
+
+.speakers-extraMargin {
+    margin: auto;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 10px;
+}
+
+@media(min-width: 992px) {
+
+    .speakers-extraMargin {
+        margin: 25px 0 0 0;
+    }
+
+    .speakers-extraMargin-1 {
+        margin: 25px 0 auto auto;
+    }
+    .speakers-extraMargin-2 {
+        margin: 25px auto 0 0;
+    }
+}
