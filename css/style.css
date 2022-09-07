@@ -8199,6 +8199,9 @@ display:table;
 }
 
 @media(max-width: 500px) {
+	.cfp-section {
+		font-size: 18px !important;
+	}
 	.popup-btn.header-popup-btn {
 		display: none;
 	}
