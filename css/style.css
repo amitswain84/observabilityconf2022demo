@@ -1236,6 +1236,18 @@ h2.join-headline {
 	opacity: 1;
 	z-index: 99999;
   }
+  .cta-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 25px;
+    margin-top: 35px;
+    background: black;
+    align-items: center;
+    border-radius: 4px;
+}
+.popup-btn.cta-popup {
+    margin-top: 0px !important;
+}
   
   .popup {
 	margin: 60px auto;
@@ -7953,6 +7965,19 @@ display:table;
 }
 
 @media(max-width: 500px) {
+	.cta-section {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 25px;
+		margin-top: 35px;
+		background: black;
+		align-items: center;
+		border-radius: 4px;
+		flex-direction: column;
+	}
+	.popup-btn.cta-popup {
+		margin-top: 30px !important;
+	}
     .past-workshops .single {
         overflow: hidden;
         margin: 0 0.5% 0.6rem;
