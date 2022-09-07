@@ -303,14 +303,17 @@
                                 
                                                  <div class="lgx-registration-form">
                                                     <form name="valform" action="" method="POST" id="form-reg">
-                                                        <input name="first_name" value="" class="wpcf7-form-control form-control"
+                                                        <div class="first-form-section">
+                                                            <input name="first_name fir-nam" value="" class="wpcf7-form-control form-control"
                                                             placeholder="First Name*" type="text" id="form-reg-name-first">
                                                         <p id="first_name_error" class="form-error-msg"></p>
                                 
-                                                        <input name="last_name" value="" class="wpcf7-form-control form-control"
+                                                        <input name="last_name sec-nam" value="" class="wpcf7-form-control form-control"
                                                         placeholder="Last Name*" type="text" id="form-reg-name-last">
                                                         <p id="last_name_error" class="form-error-msg"></p>
                                 
+                                                        </div>
+                                                        
                                                         <input name="email_id" value="" class="wpcf7-form-control form-control"
                                                             placeholder="E-mail*" type="email" id="form-reg-email_id">
                                                         <p id="email_id_error" class="form-error-msg"></p>
@@ -328,21 +331,34 @@
                                                             class="lgx-btn lgx-btn-red wpcf7-form-control wpcf7-submit lgx-submit reg-header-cus disable sent-btn"
                                                             onclick="validateOtp()" style="">Verify</a>
                                                         <p id="otp_error_2" class="form-error-msg"></p> -->
-                                
-                                                         <input name="phone_number" value=""
-                                                            class=" wpcf7-form-control form-control mob" type="tel"
-                                                            id="form-reg-phone_number" placeholder="Mobile Number"
-                                                            style="">
-                                                        <p id="phone_number_error" class="form-error-msg"
-                                                            style="line-height: 2.3rem;"></p>
-                                
+                                <div class="first-form-section">
+
+                                    <input name="phone_number" value=""
+                                    class=" wpcf7-form-control form-control mob" type="tel"
+                                    id="form-reg-phone_number" placeholder="Mobile Number"
+                                    style="">
+                                <p id="phone_number_error" class="form-error-msg"
+                                    style="line-height: 2.3rem;"></p>
+
+                                    <select name="conference_and_workshop" id="plan"
+                                    class="wpcf7-form-control form-control dropdowns" placeholder="T-Shirt Size*" >
+                                    <option value="workshop" selected>T-Shirt Size*</option>
+                                    <option value="conference" >S</option>
+                                    <option value="conference_and_workshop" >M</option>
+                                    <option value="conference" >L</option>
+                                    <option value="conference" >XL</option>
+                                    <option value="conference" >XXL</option>
+                                    <option value="conference" >XXXL</option>
+                                </select>
+                                </div>
+                                                         
                                                          <!-- <select class="selectpicker countrypicker" data-flag="true" ></select> -->
                                                          <!-- <div class="container country-container">
                                                             <span class="flag" id="flag"></span>
                                                             <select class="countries" name="countries" id="countries"></select>
                                                         </div> -->
-                                
-                                                         <input name="organisation" value=""
+                                                        <div class="first-form-section">
+                                                            <input name="organisation" value=""
                                                             class="wpcf7-form-control form-control" placeholder="Organization*"
                                                             type="text" id="form-reg-organisation">
                                                         <p id="organisation_error" class="form-error-msg"></p>
@@ -351,30 +367,29 @@
                                                             class="wpcf7-form-control form-control" placeholder="Designation*"
                                                             type="text" id="form-reg-designation">
                                                         <p id="designation_error" class="form-error-msg"></p>
+                                                        </div>
+                                                         
                                 
                                                         <input name="linkedin" value=""
                                                         class="wpcf7-form-control form-control" placeholder="Linked Profile"
-                                                        type="link" id="form-reg-designation">
+                                                        type="link" id="form-reg-linkedin">
                                                     <p id="link_error" class="form-error-msg"></p>
                                 
-                                                         <select name="conference_and_workshop" id="plan"
-                                                            class="wpcf7-form-control form-control dropdowns" placeholder="T-Shirt Size*" >
-                                                            <option value="workshop" selected>T-Shirt Size*</option>
-                                                            <option value="conference" >S</option>
-                                                            <option value="conference_and_workshop" >M</option>
-                                                            <option value="conference" >L</option>
-                                                            <option value="conference" >XL</option>
-                                                            <option value="conference" >XXL</option>
-                                                            <option value="conference" >XXXL</option>
-                                                        </select>
+                                                         
                                 
                                                          <input name="consent_1" type="checkbox" id="box-2">
-                                                        <label for="box-2">Yes, I give consent
-                                                            to KonfHub to contact me for event updates, news or offers
-                                                            by email, sms or phone. & I would like information, tips, and offers about about Unravel Data. <a href="https://konfhub.com/codeofconduct.html"
+                                                        <label for="box-2">I would like to receive information, tips and offers about Unravel Data products, services and offers.
+                                                            <a href="https://konfhub.com/privacy-policy"
                                                         target="_blank" rel="noreferrer" aria-label="Reachus"
-                                                        class="coc-cus"> Code of Conduct </a>
-                                
+                                                        class="coc-cus"> Privacy Policy.</a>
+                                                        I also agree to
+                                                        <a href="https://konfhub.com/terms-and-conditions"
+                                                        target="_blank" rel="noreferrer" aria-label="Reachus"
+                                                        class="coc-cus"> Terms & Conditions </a>
+                                                        <a href="https://konfhub.com/codeofconduct.html"
+                                                        target="_blank" rel="noreferrer" aria-label="Reachus"
+                                                        class="coc-cus"> Code of Conduct, </a>
+                                                        and give consent to KonfHub to contact me by email, SMS or phone on event updates.
                                                          </label>
                                                         <p id="consent_1_error" class="form-error-msg"></p>
                                 
@@ -408,6 +423,9 @@
                                                                     class="submit-hover btn btn-custom  text-white"
                                                                     onclick="mySubmit(this.form)" disabled>
                                                                     Join us</button></a>
+                                                        </div>
+                                                        <div class="organized-logo">
+                                                            <img src="images-event/logo/Organized by.png" alt="">
                                                         </div>
                                 
                                 

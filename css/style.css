@@ -1104,6 +1104,41 @@ h4.sub-text-line {
 /* ================================================== */
 /* About us Section */
 /* ================================================== */
+.first-form-section {
+    display: flex;
+}
+input#form-reg-name-first {
+    margin-right: 6px;
+}
+input#form-reg-name-last {
+    margin-left: 6px;
+}
+input#form-reg-organisation {
+	margin-right: 6px;
+}
+input#form-reg-designation {
+	margin-left: 6px;
+}
+select#plan {
+    height: 42px !important;
+	margin-left: 6px;
+}
+input#form-reg-phone_number {
+    width: 180%;
+	margin-right: 6px;
+}
+.first-form-section {
+    margin-bottom: 10px;
+}
+input#form-reg-email_id {
+	margin-bottom: 20px;
+}
+.organized-logo img {
+    height: 21px;
+}
+div#particles-js\ registration {
+    padding: 0px 10px !important;
+}
 p.aboutus-para {
 	color: #ffffff;
     font-size: 20px;
@@ -1264,7 +1299,7 @@ nav {
 }
   
   .popup {
-	margin: 60px auto;
+	margin: 80px auto;
 	padding: 20px;
 	background: rgb(0, 0, 0);
 	border-radius: 5px;
@@ -1277,8 +1312,8 @@ nav {
   }
   .popup .close {
 	position: absolute;
-	top: 20px;
-	right: 30px;
+	top: 12px;
+	right: 18px;
 	transition: all 200ms;
 	font-size: 30px;
 	font-weight: bold;
@@ -8199,6 +8234,18 @@ display:table;
 }
 
 @media(max-width: 500px) {
+	.first-form-section {
+		margin-bottom: 5px;
+	}
+	input#form-reg-email_id {
+		margin-bottom: 15px;
+	}
+	select#plan {
+		height: 35px !important;
+	}
+	input#form-reg-phone_number {
+		width: 140%;
+	}
 	.cfp-section {
 		font-size: 18px !important;
 	}
@@ -8250,8 +8297,8 @@ display:table;
 	}
 	label {
 		margin-top: 10px;
-		line-height: 14px !important;
-		font-size: 10px !important;
+		line-height: 15px !important;
+		font-size: 11px !important;
 	}
 	h5.sub-why-text {
 		font-size: 15px;
