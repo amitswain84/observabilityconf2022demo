@@ -1198,7 +1198,6 @@ h1.should-attend {
 }
 .attend-text {
 	font-weight: 500;
-	width: 410px;
 	display: flex;
     padding: 40px 10px;
     font-size: 18px;
@@ -1257,8 +1256,11 @@ h2.join-headline {
 	display: flex;
 	justify-content: space-between;
 }
+.second-head {
+    display: flex;
+}
 nav {
-	margin-left: 580px;
+    margin-right: 25px;
 }
   
   .popup {
@@ -8197,8 +8199,18 @@ display:table;
 }
 
 @media(max-width: 500px) {
+	.popup-btn.header-popup-btn {
+		display: none;
+	}
 	.row.header-main-subsection {
-		display: contents;
+		display: flex;
+		justify-content: space-around;
+	}
+	div#logo {
+		margin-left: 15px;
+	}
+	span#menu-btn {
+		margin-left: 35px;
 	}
 	.col-md-12.header-main-section {
 		display: contents;
