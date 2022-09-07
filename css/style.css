@@ -1105,7 +1105,7 @@ h4.sub-text-line {
 /* About us Section */
 /* ================================================== */
 p.aboutus-para {
-    text-align: justify;
+	color: #ffffff;
     font-size: 20px;
     font-weight: 500;
 }
@@ -1187,6 +1187,9 @@ h1.title-3.text-left.youtube-header {
 .col-lg-4.wow.fadeIn.whyJoin_content.animated {
     display: none;
 }
+.should-attend-container {
+    margin-top: -35px;
+}
 h1.should-attend {
     margin-top: 26px;
 }
@@ -1194,6 +1197,8 @@ h1.should-attend {
     display: flex;
 }
 .attend-text {
+	font-weight: 500;
+	width: 410px;
 	display: flex;
     padding: 40px 10px;
     font-size: 18px;
@@ -1247,6 +1252,13 @@ h2.join-headline {
 }
 .popup-btn.cta-popup {
     margin-top: 0px !important;
+}
+.col-md-12.header-main-section {
+	display: flex;
+	justify-content: space-between;
+}
+nav {
+	margin-left: 580px;
 }
   
   .popup {
@@ -8118,6 +8130,7 @@ display:table;
 }
 
 @media(min-width: 1560px) {
+	
 	.youtube-video {
 		width: 1000px; 
 		height: 600px;
@@ -8184,6 +8197,16 @@ display:table;
 }
 
 @media(max-width: 500px) {
+	.row.header-main-subsection {
+		display: contents;
+	}
+	.col-md-12.header-main-section {
+		display: contents;
+		/* justify-content: space-between; */
+	}
+	span.popup-btn.header-popup-btn {
+		display: none;
+	}
 	.container-fluid.px-5 {
 		padding-left: 1rem !important;
 		padding-right: 1rem !important;
